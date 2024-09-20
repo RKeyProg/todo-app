@@ -9,7 +9,9 @@ const Hero = () => {
 				<h1 className='font-rosario font-bold text-5xl mt-[73px] mb-[40px] w-[50%] text-center'>
 					Organizing your day activity with Todo Daily
 				</h1>
-				<Button styles='text-4xl'>Get started</Button>
+				<Button variant='filled' styles='text-4xl'>
+					Get started
+				</Button>
 			</div>
 			<img
 				src='/assets/heroBG.png'

@@ -1,14 +1,9 @@
 import { ButtonType } from '../types'
 
-const Button = ({ children, isTransparent, styles }: ButtonType) => {
+const Button = ({ children, variant, styles, icon }: ButtonType) => {
 	return (
-		<button
-			className={`${
-				isTransparent
-					? 'bg-transparent text-black '
-					: 'bg-red font-rosario font-bold py-2 px-7 rounded-[8px] text-white'
-			} min-w-[120px] ${styles}`}
-		>
+		<button className={`${variant} ${styles}`}>
+			{icon && <img src={icon} alt='icon' className='w-7 h-7 object-contain' />}
 			{children}
 		</button>
 	)

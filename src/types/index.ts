@@ -1,5 +1,6 @@
 export type ButtonType = {
 	children: React.ReactNode
-	isTransparent?: boolean
+	variant: 'filled' | 'outlined' | 'transparent' | 'icon'
 	styles?: string
+	icon?: string
 }
